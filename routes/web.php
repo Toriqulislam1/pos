@@ -29,4 +29,6 @@ Route::controller(categoryController::class)->group(function (){
     Route::get('category/add',  'categoryAdd')->name('categoryAdd');
     Route::get('unit/add',  'unitAdd')->name('unitAdd');
 
+    Route::post('/category-from',  'categoryStore')->name('categoryStore');
+
 });

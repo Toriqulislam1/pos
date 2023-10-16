@@ -16,5 +16,21 @@ class categoryController extends Controller
 
 
         return view('category.unit.unitadd');
+    }//end
+
+    function categoryStore(Request $request){
+
+        $test = $request->InputCategory;
+        echo $test;
+        $request->validate([
+            'InputCategory' => 'required|max:255',
+
+        ],
+        [
+            'InputCategory.required'=>"category is required",
+        ]
+
+    );
+
     }
 }
