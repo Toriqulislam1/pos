@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\category;
+use App\Models\unit;
 
 class categoryController extends Controller
 {
@@ -11,26 +13,37 @@ class categoryController extends Controller
 
 
         return view('category.addCategory');
-    }
+    }//end
+
     function unitAdd(){
 
 
-        return view('category.unit.unitadd');
+        return view('unit.unitadd');
     }//end
 
     function categoryStore(Request $request){
 
-        $test = $request->InputCategory;
-        echo $test;
-        $request->validate([
-            'InputCategory' => 'required|max:255',
+       $data = new category;
 
-        ],
-        [
-            'InputCategory.required'=>"category is required",
-        ]
+       $data->category_name = $request->Category;
+       $data->save();
 
-    );
+       return response()->json([]);
 
-    }
+    }//end
+
+    function unitStore(Request $request){
+
+        $data = new unit;
+
+        $data->unit_name = $request->unit_name;
+        $data->save();
+
+        return response()->json([]);
+
+     }//end
+
+
+
+
 }

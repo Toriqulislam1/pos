@@ -25,10 +25,12 @@ Route::controller(profileController::class)->group(function (){
 
 });
 Route::controller(categoryController::class)->group(function (){
-    // admin view
+    // category
     Route::get('category/add',  'categoryAdd')->name('categoryAdd');
-    Route::get('unit/add',  'unitAdd')->name('unitAdd');
+    Route::post('/ajaxupload',  'categoryStore')->name('categoryStore');
 
-    Route::post('/category-from',  'categoryStore')->name('categoryStore');
+    //unit
+    Route::get('unit/add',  'unitAdd')->name('unitAdd');
+    Route::post('/unitadd',  'unitStore');
 
 });
