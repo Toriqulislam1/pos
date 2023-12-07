@@ -9,27 +9,27 @@
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
                         <a href="{{ url('admin/login') }}" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span>
+                            <i class="fs-4 bi-house"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">Home</span>
                         </a>
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
                                 Manage Products</span> <i class="fa-solid fa-plus"></i> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
-                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="d-none d-sm-inline">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
                                     Categories</span>  </a>
                             </li>
                             <li>
-                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="d-none d-sm-inline">Units</span></a>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">Units</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">
+                                <a href="#" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
                                     Taxes</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">
+                                <a href="#" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
                                     Products</span></a>
                             </li>
                         </ul>

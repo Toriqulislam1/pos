@@ -86,7 +86,12 @@ body {
 
 .sidebar-bg{
 
-    background: #EFF4F8;
+    background:#0C213A;
+
+}
+
+.sidebar-text{
+    color: white;
 }
 
 /* category */
