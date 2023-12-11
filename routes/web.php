@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\profileController;
 use App\Http\Controllers\Backend\categoryController;
+use App\Http\Controllers\Backend\productController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,25 @@ Route::controller(categoryController::class)->group(function (){
     //unit
     Route::get('unit/add',  'unitAdd')->name('unitAdd');
     Route::post('/unitadd',  'unitStore');
+
+    //tex
+    Route::get('tex/add',  'texAdd')->name('texAdd');
+    Route::post('/tex/store',  'texStore')->name('texStore');
+
+});
+
+//product
+Route::controller(productController::class)->group(function (){
+    // category
+    Route::get('product',  'productHome')->name('productHome');
+    Route::post('/categpry/store',  'categoryStore')->name('categoryStore');
+
+    //unit
+    Route::get('unit/add',  'unitAdd')->name('unitAdd');
+    Route::post('/unitadd',  'unitStore');
+
+    //tex
+    Route::get('tex/add',  'texAdd')->name('texAdd');
+    Route::post('/tex/store',  'texStore')->name('texStore');
 
 });

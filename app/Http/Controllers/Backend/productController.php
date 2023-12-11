@@ -8,13 +8,12 @@ use App\Models\category;
 use App\Models\tex;
 use App\Models\unit;
 
-class categoryController extends Controller
+class productController extends Controller
 {
-    function categoryAdd(){
+    function productHome(){
 
-        $categoris = category::latest()->get();
 
-        return view('category.addCategory',['categoris'=>$categoris]);
+        return view('product.productHome');
     }//end
 
     function categoryStore(Request $request){

@@ -25,11 +25,11 @@
                                 <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">Units</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                <a href="{{ route('texAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
                                     Taxes</span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                <a href="{{ route('productHome') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
                                     Products</span></a>
                             </li>
                         </ul>
