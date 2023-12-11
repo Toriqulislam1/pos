@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2023 at 04:05 AM
+-- Generation Time: Dec 11, 2023 at 08:44 AM
 -- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- PHP Version: 8.1.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -48,7 +48,18 @@ INSERT INTO `categories` (`id`, `category_name`, `created_at`, `updated_at`) VAL
 (7, 'asdf', '2023-10-18 10:57:32', '2023-10-18 10:57:32'),
 (8, 'sdfg', '2023-10-18 11:00:07', '2023-10-18 11:00:07'),
 (9, 'asdf', '2023-10-18 11:00:52', '2023-10-18 11:00:52'),
-(10, 'zxcv', '2023-10-18 11:01:23', '2023-10-18 11:01:23');
+(10, 'zxcv', '2023-10-18 11:01:23', '2023-10-18 11:01:23'),
+(11, 'sdfg', '2023-12-06 05:12:01', '2023-12-06 05:12:01'),
+(12, 'toriul', '2023-12-06 05:13:29', '2023-12-06 05:13:29'),
+(13, 'test cat', '2023-12-06 05:15:51', '2023-12-06 05:15:51'),
+(14, 'df', '2023-12-06 05:19:57', '2023-12-06 05:19:57'),
+(15, 'ssssss', '2023-12-06 05:41:01', '2023-12-06 05:41:01'),
+(16, 'xxxxx', '2023-12-06 05:42:59', '2023-12-06 05:42:59'),
+(17, 'dsaf', '2023-12-06 05:46:56', '2023-12-06 05:46:56'),
+(18, 'ggg', '2023-12-06 05:47:34', '2023-12-06 05:47:34'),
+(19, 'dfsdf', '2023-12-06 06:00:47', '2023-12-06 06:00:47'),
+(20, 'ttttt', '2023-12-06 06:03:45', '2023-12-06 06:03:45'),
+(21, 'adf', '2023-12-06 06:04:33', '2023-12-06 06:04:33');
 
 -- --------------------------------------------------------
 
@@ -88,7 +99,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (3, '2019_08_19_000000_create_failed_jobs_table', 1),
 (4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 (5, '2023_10_17_155033_create_categories_table', 1),
-(6, '2023_10_18_180046_create_units_table', 2);
+(6, '2023_10_18_180046_create_units_table', 2),
+(7, '2023_12_11_050040_create_texes_table', 3);
 
 -- --------------------------------------------------------
 
@@ -124,6 +136,27 @@ CREATE TABLE `personal_access_tokens` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `texes`
+--
+
+CREATE TABLE `texes` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `tex` int(11) NOT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `texes`
+--
+
+INSERT INTO `texes` (`id`, `title`, `tex`, `created_at`, `updated_at`) VALUES
+(1, 'srt', 10, '2023-12-10 23:42:53', '2023-12-10 23:42:53');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `units`
 --
 
@@ -147,7 +180,14 @@ INSERT INTO `units` (`id`, `unit_name`, `created_at`, `updated_at`) VALUES
 (6, 'sdfg', '2023-10-18 12:54:01', '2023-10-18 12:54:01'),
 (7, 'sdfg', '2023-10-18 12:54:16', '2023-10-18 12:54:16'),
 (8, 'sdfg', '2023-10-18 12:55:19', '2023-10-18 12:55:19'),
-(9, 'sdfg', '2023-10-18 12:55:25', '2023-10-18 12:55:25');
+(9, 'sdfg', '2023-10-18 12:55:25', '2023-10-18 12:55:25'),
+(10, 'dgh', '2023-12-06 00:45:58', '2023-12-06 00:45:58'),
+(11, 'sdfg', '2023-12-06 00:46:02', '2023-12-06 00:46:02'),
+(12, 'unit test', '2023-12-06 00:46:33', '2023-12-06 00:46:33'),
+(13, 'sdfg', '2023-12-06 01:11:19', '2023-12-06 01:11:19'),
+(14, 'sdfg', '2023-12-06 01:11:28', '2023-12-06 01:11:28'),
+(15, 'dsfg', '2023-12-06 05:18:15', '2023-12-06 05:18:15'),
+(16, 'sdfgadfg', '2023-12-06 05:18:26', '2023-12-06 05:18:26');
 
 -- --------------------------------------------------------
 
@@ -204,6 +244,12 @@ ALTER TABLE `personal_access_tokens`
   ADD KEY `personal_access_tokens_tokenable_type_tokenable_id_index` (`tokenable_type`,`tokenable_id`);
 
 --
+-- Indexes for table `texes`
+--
+ALTER TABLE `texes`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `units`
 --
 ALTER TABLE `units`
@@ -224,7 +270,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -236,7 +282,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -245,10 +291,16 @@ ALTER TABLE `personal_access_tokens`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `texes`
+--
+ALTER TABLE `texes`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `units`
 --
 ALTER TABLE `units`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `users`

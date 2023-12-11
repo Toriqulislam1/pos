@@ -12,6 +12,7 @@
                             <i class="fs-4 bi-house"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">Home</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                                   <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
@@ -34,9 +35,261 @@
                             </li>
                         </ul>
                     </li>
+
+
+                    <li>
+                        <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                  <i class="fs-4 bi-speedometer2"></i> <span class="sidebar-text ms-1 d-none d-sm-inline">
+                                    Manage Sales</span> <i class="fa-solid fa-plus"></i> </a>
+                        <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                            <li class="w-100">
+                                <a href="{{ route('categoryAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Create Invoice</span>  </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('unitAdd') }}" class="nav-link px-0"> <span class="sidebar-text d-none d-sm-inline">
+                                    Sell Invoice</span></a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-
-
             </div>
         </div>
         <div class="col py-3">
