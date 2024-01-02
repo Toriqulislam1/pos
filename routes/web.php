@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\profileController;
 use App\Http\Controllers\Backend\categoryController;
 use App\Http\Controllers\Backend\productController;
-
+use App\Models\Article;
+use App\Models\language;
+use App\Models\ArticleTranslations;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +19,44 @@ use App\Http\Controllers\Backend\productController;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
+});
+
+Route::get('/', function () {
+
+
+    $article = Article::create(['status' => true]);
+
+    $english = language::where('code', 'en')->first();
+    $spanish = language::where('code', 'es')->first();
+
+    $article->translations()->create([
+        'lang_id' => $english->id,
+        'title' => 'English Title',
+        'description' => 'English Description',
+    ]);
+
+    $article->translations()->create([
+        'lang_id' => $spanish->id,
+        'title' => 'Spanish Title',
+        'description' => 'Spanish Description',
+    ]);
+
+    $englishArticle = $article->translate($english->id);
+    $spanishArticle = $article->translate($spanish->id);
+
+    echo $englishArticle->title;  // Output: English Title
+    echo $spanishArticle->title;  // Output: Spanish Title
+
+
+
+
+
+
+
+
+return view('welcome');
 });
 
 Route::controller(profileController::class)->group(function (){

@@ -97,7 +97,7 @@
                     console.log('Data added successfully:', data);
                     $('.table').load(location.href+' .table');
                     jQuery('#addCategory')[0].reset();
-                    
+
                 }
             })
 
@@ -106,6 +106,7 @@
     });
 
 </script>
+
 
 @endsection
 

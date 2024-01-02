@@ -130,6 +130,24 @@
                         </div>
                     </div>
 
+                    @php
+                    $articles = App\Models\Article::all();
+                    $english = App\Models\Language::where('code', 'en')->first();
+                    $spanish = App\Models\Language::where('code', 'es')->first();
+                @endphp
+
+                @foreach($articles as $article)
+                    @php
+                        $englishArticle = $article->translate($english->id);
+                        $spanishArticle = $article->translate($spanish->id);
+                    @endphp
+
+                    <div>
+                        <span>{{ $englishArticle->title ?? 'No English Title' }}</span>
+                        <span>{{ $spanishArticle->title ?? 'No Spanish Title' }}</span>
+                    </div>
+                @endforeach
+
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
                     </div>
