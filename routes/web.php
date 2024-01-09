@@ -84,7 +84,7 @@ Route::controller(productController::class)->group(function (){
     // category
     Route::get('product',  'productHome')->name('productHome');
     Route::post('/categpry/store',  'categoryStore')->name('categoryStore');
-
+    Route::post('/categpry/search',  'categorySearch')->name('categoryStore');
     //unit
     Route::get('unit/add',  'unitAdd')->name('unitAdd');
     Route::post('/unitadd',  'unitStore');

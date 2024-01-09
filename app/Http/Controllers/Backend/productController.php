@@ -62,4 +62,14 @@ class productController extends Controller
 
      }//end
 
-}
+
+     public function categorySearch(Request $request){
+
+
+
+            $data = category::where('category_name', $request->search)->get();
+            return response()->json(['data' => $data]);
+        }
+
+     }
+

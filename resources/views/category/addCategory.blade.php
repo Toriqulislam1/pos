@@ -75,6 +75,17 @@
 
 </div>
 
+<form action="{{ url('/categpry/search') }}" method="POST" id="addSearch">
+    @csrf
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="text" class="form-control" name="search" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
 
 @endsection
 
@@ -108,7 +119,87 @@
 </script>
 
 
+<div class="test">
+    <label for="">show</label>
+    <input type="text" name="category_name" value="" id="categoryNameInput">
+</div>
 
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#searchForm').on('submit', function(event) {
+            event.preventDefault();
+
+            // Make an AJAX request to get the category data
+            $.ajax({
+                url: "{{ url('/category/search') }}",
+                data: $('#searchForm').serialize(),
+                type: "post",
+                dataType: "json",
+                success: function(response) {
+                    // Assuming 'category_name' is a field in your data
+
+                    var categoryName = response.data[0].id;
+
+
+                },
+                error: function(error) {
+                    console.log('Error:', error);
+                }
+            });
+        });
+
+
+        $('.test').on('click',function(){
+            let cat = $(this).data('category_name');
+            $('#categoryNameInput').val(cat);
+
+        })
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//search bar
+{{--  <script>
+    $(document).ready(function() {
+
+        $('#addSearch').on('submit', function(event) {
+            event.preventDefault();
+            jQuery.ajax({
+                url: "{{  url('/categpry/search') }}"
+                , data: jQuery('#addSearch').serialize()
+                , type: "post"
+                , success: function(data) {
+                    console.log('Done:', data);
+                    $('.table').load(location.href+' .table');
+                    jQuery('#addSearch')[0].reset();
+
+                }
+            })
+
+        });
+
+    });
+
+</script>  --}}
 
 
 
